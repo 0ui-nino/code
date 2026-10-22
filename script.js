@@ -22,7 +22,7 @@ function enter(event) {
 
     reset()
 
-    if (admin === 1) {if (code === "280811"){
+    if (admin === 1) {if (code === "IMTHEADMIN"){
         txt.textContent = "entrez le second code administrateur"
         admin = 2
         return
