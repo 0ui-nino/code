@@ -68,7 +68,7 @@ function enter(event) {
         }, 5000))
     }
     else if (code === "admin") {
-        if (admin = true) {"vous êtes bien connecter en tant qu'administrateur"}
+        if (admin === true) {txt.textContent = "vous êtes bien connecter en tant qu'administrateur"}
         else {
             txt.textContent = "entrez votre code administrateur"
             admin = 1
