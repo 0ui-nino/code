@@ -70,8 +70,8 @@ function enter(event) {
     else if (code === "admin") {
         if (admin = true) {"vous êtes bien connecter en tant qu'administrateur"}
         else {
-        txt.textContent = "entrez votre code administrateur"
-        admin = 1
+            txt.textContent = "entrez votre code administrateur"
+            admin = 1
         }
     }
     else if (code === "/give @s minecraft:netherite_ingot") {
