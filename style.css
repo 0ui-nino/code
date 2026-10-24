@@ -9,12 +9,19 @@ body {
 #icode {
     width: 300px;
     height: 35px;
+    background-color: lightslategray;
 }
 
 #bok {
+    background-color: lightslategray;
     height: 35px;
 }
 
 #txt {
     white-space: pre-line;
+}
+
+#image {
+    height: 50vh;
+    width: auto;
 }
