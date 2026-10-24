@@ -1,6 +1,7 @@
 const icode = document.getElementById('icode')
 const bok = document.getElementById('bok')
 const txt = document.getElementById('txt')
+const image=document.getElementById('image')
 let admin = 0
 let timers = []
 bok.addEventListener("click", enter)
@@ -11,6 +12,7 @@ function reset() {
     txt.style.color = "black"
     for (const timer of timers) {clearTimeout(timer)}
     timers = []
+    image.src = ""
 }
 
 function enter(event) {
@@ -37,6 +39,7 @@ function enter(event) {
     }
     else {admin = 0 ; txt.textContent = "code incorrect" ; return}
     }
+
 
     if (code === "bonjour") {
         txt.textContent = "bien le bonjour à toi aussi"
@@ -68,7 +71,7 @@ function enter(event) {
         }, 5000))
     }
     else if (code === "admin") {
-        if (admin === true) {txt.textContent = "vous êtes bien connecter en tant qu'administrateur"}
+        if (admin === true) {txt.textContent = "vous êtes bien connecté en tant qu'administrateur"}
         else {
             txt.textContent = "entrez votre code administrateur"
             admin = 1
@@ -77,6 +80,11 @@ function enter(event) {
     else if (code === "/give @s minecraft:netherite_ingot") {
         txt.textContent = "vous êtes un tricheur\nvous êtes un tricheur\nvous êtes un tricheur\nvous êtes un tricheur\n..."
     }
+    else if (code === "Troie"){
+        txt.textContent = "Les grecs ont vaincus les troyens !!"
+        image.src = "images/casque.png"
+    }
+
     else {
         txt.textContent = "ce code n'existe pas"
         txt.style.color = "red"
