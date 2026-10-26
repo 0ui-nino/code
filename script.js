@@ -79,12 +79,16 @@ function enter(event) {
     }
     else if (code === "/give @s minecraft:netherite_ingot") {
         txt.textContent = "vous êtes un tricheur\nvous êtes un tricheur\nvous êtes un tricheur\nvous êtes un tricheur\n..."
+        image.src = "images/netherite_ingot.png"
     }
     else if (code === "Troie"){
         txt.textContent = "Les grecs ont vaincus les troyens !!"
         image.src = "images/casque.png"
     }
-
+    else if (code === "bismillah c'est les ténèbres") {
+        txt.textContent = "Vous avez bien été identifié comme un membre des forces de l'ordre"
+        image.src = "images/EmblèmeCRS.svg.png"
+    }
     else {
         txt.textContent = "ce code n'existe pas"
         txt.style.color = "red"
